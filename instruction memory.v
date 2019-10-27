@@ -5,9 +5,9 @@ output reg [31:0] instruction;
 reg [31:0] memory [0:8191];
 initial
 begin
-    $readmemb("E:/Code/text.txt",memory);
+    $readmemb("C:/Code/text.txt",memory);
   end
-always @ (posedge clk)
+always @ (negedge clk)
 instruction <= memory[pc];
 endmodule
 

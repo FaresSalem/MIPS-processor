@@ -7,12 +7,16 @@ input [31:0] write_data;
 
 reg[31:0] mem[0:8191];
 
-always @(negedge clk)
+always@(address or write_data)
+begin
+if(memwrite == 1)
+    mem[address]<=write_data;
+end
+
+always @(posedge clk)
 begin 
-	if(memwrite == 1)
-	    mem[address]<=write_data;
-	else if(memread == 1)
-	    read_data<=mem[address];
+if(memread == 1)
+    read_data<=mem[address];
 end 
 
 endmodule
