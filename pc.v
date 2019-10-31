@@ -3,9 +3,9 @@ input[12:0] pcNext;
 input clk,reset;
 output reg[12:0] pcResult;
 
-initial pcResult<=13'h0000;
+//initial pcResult<=13'h0000;
 
-always @ (posedge clk)
+always @ (posedge clk or posedge reset)
 begin
 if(reset == 1)
 	pcResult<=13'h0000;

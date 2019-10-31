@@ -5,18 +5,33 @@ input memread,memwrite,clk;
 input [12:0] address;
 input [31:0] write_data;
 
-reg[31:0] mem[0:8191];
+integer file,i;
 
-always@(address or write_data)
+reg[31:0] mem[0:8191];
+/*
+always @(memread or memwrite)
 begin
-if(memwrite == 1)
-    mem[address]<=write_data;
+
+	file = $fopen("C:/Code/dataMemory.txt","w");
+	for(i=0;i<8192;i=i+1)
+	begin   
+	$fwrite(file,"%b\n",mem[i]); 
+	end
+	$fclose(file);$display("end");
+	$stop();
+
+end
+*/
+always@(address or memread)
+begin
+if(memread == 1)
+    read_data<=mem[4];
 end
 
 always @(posedge clk)
 begin 
-if(memread == 1)
-    read_data<=mem[address];
+if(memwrite == 1)   
+     mem[address]<=write_data;
 end 
 
 endmodule
