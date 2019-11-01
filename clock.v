@@ -1,7 +1,8 @@
+`timescale 1ns/1ns
 module clock(clk);
 output reg clk;
 initial
-clk=0;
+clk=1;
 always
 begin
 #31.25

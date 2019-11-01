@@ -1,6 +1,6 @@
-module Control(ALUControl,opcode, funct, ALUSrc, RegDst, MemWrite, MemRead, Beq, Bne, Jump, MemToReg, RegWrite );
+module Control(ALUControl,opcode, funct, ALUSrc, RegDst, MemWrite, MemRead, Beq, Bne, Jump, MemToReg, RegWrite,jr,jal,zero_ext );
   input [5:0] opcode, funct;
-  output reg ALUSrc, RegDst, MemWrite, MemRead, Beq, Bne, Jump, MemToReg,RegWrite;
+  output reg ALUSrc, RegDst, MemWrite, MemRead, Beq, Bne, Jump, MemToReg,RegWrite ,jr,jal,zero_ext;
   output reg [3:0] ALUControl;
 
   always @(*) begin
@@ -16,20 +16,44 @@ module Control(ALUControl,opcode, funct, ALUSrc, RegDst, MemWrite, MemRead, Beq,
       Jump <= 0;
       MemToReg <= 0;
       RegWrite <= 1;
-
+      zero_ext<=0;
+	jal<=0;
       case (funct)
       // ADD
-      'b 100000: ALUControl <= 'b 0010;
+      'b 100000: begin
+	ALUControl <= 'b 0010;
+	jr<=0;
+	end
       // SUB
-      'b 100010: ALUControl <= 'b 0110;
+      'b 100010: begin 
+	ALUControl <= 'b 0110;
+	jr<=0;
+	end
       // AND
-      'b 100100: ALUControl <= 'b 0000;
+      'b 100100: begin 
+	ALUControl <= 'b 0000;
+	jr<=0;
+	end
       // OR
-      'b 100101: ALUControl <= 'b 0001;
+      'b 100101: begin 
+	ALUControl <= 'b 0001;
+	jr<=0;
+	end
       // SLT
-      'b 101010: ALUControl <= 'b 0111;
+      'b 101010: begin 
+	ALUControl <= 'b 0111;
+	jr<=0;
+	end
       // sLL
-      'b 000000: ALUControl <= 'b 1110;
+      'b 000000: begin
+	ALUControl <= 'b 1110;
+	jr<=0;
+	end
+	// jr
+	'd 8:begin
+	ALUControl <= 'b xxxx;
+	jr <= 1;
+	end
       endcase
     end
 
@@ -44,6 +68,8 @@ module Control(ALUControl,opcode, funct, ALUSrc, RegDst, MemWrite, MemRead, Beq,
       Jump <= 0;
       MemToReg <= 1;
       RegWrite <= 1;
+jal<=0;
+zero_ext<=0;
       // ADD
       ALUControl <= 'b 0010;
     end
@@ -57,6 +83,8 @@ module Control(ALUControl,opcode, funct, ALUSrc, RegDst, MemWrite, MemRead, Beq,
       Bne <= 0;
       Jump <= 0;
       RegWrite <= 0;
+jal<=0;
+zero_ext<=0;
       // ADD
       ALUControl <= 'b 0010;
     end
@@ -69,7 +97,9 @@ module Control(ALUControl,opcode, funct, ALUSrc, RegDst, MemWrite, MemRead, Beq,
       Beq <= 1;
       Bne <= 0;
       Jump <= 0;
+jal<=0;
       RegWrite <= 0;
+zero_ext<=0;
       // SUB
       ALUControl <= 'b 0110;
     end
@@ -83,6 +113,8 @@ module Control(ALUControl,opcode, funct, ALUSrc, RegDst, MemWrite, MemRead, Beq,
       Bne <= 1;
       Jump <= 0;
       RegWrite <= 0;
+jal<=0;
+zero_ext<=0;
       // SUB
       ALUControl <= 'b 0110;
     end
@@ -95,8 +127,24 @@ module Control(ALUControl,opcode, funct, ALUSrc, RegDst, MemWrite, MemRead, Beq,
       Bne <= 0;
       Jump <= 1;
       RegWrite <= 0;
+jal<=0;
+zero_ext<=0;
     end
-
+	//jal
+   
+	6'b000011 : begin
+	RegDst <= 1'b0;
+	Jump <=1;
+	Bne<=1'b0;
+	MemToReg<=1'b0;
+	MemWrite<=0;
+	ALUSrc<=1'b0;
+	RegWrite<=1;
+	jal<=1;
+        MemRead <= 0;
+zero_ext<=0;
+    end
+	
     // addi
     'b 001000: begin
       ALUSrc <= 1;
@@ -108,11 +156,14 @@ module Control(ALUControl,opcode, funct, ALUSrc, RegDst, MemWrite, MemRead, Beq,
       Jump <= 0;
       MemToReg <= 0;
       RegWrite <= 1;
+	jal<=0;
+	jr<=0;
+zero_ext<=0;
       // ADD
       ALUControl <= 'b 0010;
     end
    //ori 
-    'b 001101:begin
+    'b 001101 : begin
     ALUSrc <= 1;
     RegDst <= 0;
     MemWrite <= 0;
@@ -122,6 +173,8 @@ module Control(ALUControl,opcode, funct, ALUSrc, RegDst, MemWrite, MemRead, Beq,
     Jump <= 0;
     MemToReg <= 0;
     RegWrite <= 1;
+jal<=0;
+    zero_ext<=1;
     // or
     ALUControl <='b 0001;
     end

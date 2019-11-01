@@ -1,12 +1,16 @@
-module sign_extend(in_16,out_32);
+module sign_extend(in_16,out_32,control);
 output reg [31:0] out_32;
 input [15:0] in_16;
-always @(in_16)
+input control;
+
+always @(in_16,control)
 begin
-if(in_16[15] == 0)
+if((in_16[15] == 0) && (control == 0))
 out_32 <= in_16 | 32'h00000000;
-else if(in_16[15] == 1)
+else if((in_16[15] == 1) && (control == 0) )
 out_32 <= in_16 | 32'hffff0000;
+else if(control == 1)
+out_32<=in_16;
 else
 out_32 <= 32'hxxxxxxxx;
 end

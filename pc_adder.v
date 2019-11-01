@@ -2,9 +2,9 @@ module adder_13bit(result,pc_in);
 
 output reg[12:0] result;
 input [12:0] pc_in;
-wire [12:0] const;
+//wire [12:0] const;
 
-initial result<=13'h0000;
+//initial result<=13'h0000;
 
 always @(pc_in)
 begin
