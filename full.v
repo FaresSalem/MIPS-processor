@@ -14,7 +14,7 @@
 
 module tb_full();
 
-wire clk,zero_ext,RegDst,RegWrite,ALUSrc,MemWrite,MemRead,zero_flag,Beq,MemToReg,jal,and_out,Jump,jr;
+wire clk,zero_ext,RegDst,RegWrite,ALUSrc,MemWrite,MemRead,zero_flag,Beq,MemToReg,jal,and_out,Jump,jr,and2_out,not_out;
 wire[12:0] pc_out,adder1_out,adder2_out,mux6_out,mux7_out,mux8_out;
 wire [4:0] mux1_out,mux2_out;
 wire [31:0]  mux3_out,reg_out1,reg_out2,alu_out,signex_out,instruction_out,read_datamem_out,mux5_out,mux4_out;
@@ -27,7 +27,7 @@ pc p(pc_out,mux8_out,reset,clk);
 
 instruction_memory inst_mem(pc_out,clk,instruction_out);
 
-register regf(reg_out1,reg_out2,mux2_out,mux5_out,RegWrite,clk,instruction_out[25:21],instruction_out[20:16],reset);
+register regf(reg_out1,reg_out2,mux2_out,mux5_out,not_out,clk,instruction_out[25:21],instruction_out[20:16],reset);
 
 Control cont(ALUControl,instruction_out[31:26],instruction_out[5:0],ALUSrc,RegDst,MemWrite, MemRead, Beq, Bne, Jump, MemToReg, RegWrite,jr,jal,zero_ext );
 
@@ -60,6 +60,12 @@ mux_13_13_13 mux6(adder1_out,adder2_out,and_out,mux6_out);
 mux_13_13_13 mux7(mux6_out,instruction_out[12:0],Jump,mux7_out);
 
 mux_13_13_13 mux8(mux7_out,reg_out1[12:0],jr,mux8_out);
+
+not(not_out,jr);
+
+and_gate and2(RegWrite,not_out,and2_out);
+
+
 
 initial 
 begin
