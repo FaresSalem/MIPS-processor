@@ -27,7 +27,7 @@ pc p(pc_out,mux8_out,reset,clk);
 
 instruction_memory inst_mem(pc_out,clk,instruction_out);
 
-register regf(reg_out1,reg_out2,mux2_out,mux5_out,not_out,clk,instruction_out[25:21],instruction_out[20:16],reset);
+register regf(reg_out1,reg_out2,mux2_out,mux5_out,and2_out,clk,instruction_out[25:21],instruction_out[20:16],reset);
 
 Control cont(ALUControl,instruction_out[31:26],instruction_out[5:0],ALUSrc,RegDst,MemWrite, MemRead, Beq, Bne, Jump, MemToReg, RegWrite,jr,jal,zero_ext );
 
