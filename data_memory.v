@@ -25,7 +25,7 @@ end
 always@(*)
 begin
 if(memread == 1)
-    read_data<=mem[4];
+    read_data<=mem[address];
 end
 
 always @(posedge clk)
