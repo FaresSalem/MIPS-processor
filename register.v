@@ -59,7 +59,7 @@ rf[30]<=32'h00000000;
 rf[31]<=32'h00000000;
 end
 
-always@(read1 or read2)
+always@(*)
 begin
 data1<=rf[read1];
 data2<=rf[read2];
