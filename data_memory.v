@@ -22,7 +22,7 @@ begin
 
 end
 */
-always@(address or memread)
+always@(*)
 begin
 if(memread == 1)
     read_data<=mem[4];
