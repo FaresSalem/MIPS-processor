@@ -70,6 +70,7 @@ module Control(ALUControl,opcode, funct, ALUSrc, RegDst, MemWrite, MemRead, Beq,
       RegWrite <= 1;
 jal<=0;
 zero_ext<=0;
+jr<=0;
       // ADD
       ALUControl <= 'b 0010;
     end
@@ -85,6 +86,7 @@ zero_ext<=0;
       RegWrite <= 0;
 jal<=0;
 zero_ext<=0;
+jr<=0;
       // ADD
       ALUControl <= 'b 0010;
     end
@@ -100,6 +102,7 @@ zero_ext<=0;
 jal<=0;
       RegWrite <= 0;
 zero_ext<=0;
+jr<=0;
       // SUB
       ALUControl <= 'b 0110;
     end
@@ -115,6 +118,7 @@ zero_ext<=0;
       RegWrite <= 0;
 jal<=0;
 zero_ext<=0;
+jr<=0;
       // SUB
       ALUControl <= 'b 0110;
     end
@@ -129,6 +133,7 @@ zero_ext<=0;
       RegWrite <= 0;
 jal<=0;
 zero_ext<=0;
+jr<=0;
     end
 	//jal
    
@@ -143,6 +148,7 @@ zero_ext<=0;
 	jal<=1;
         MemRead <= 0;
 zero_ext<=0;
+jr<=0;
     end
 	
     // addi
@@ -175,6 +181,7 @@ zero_ext<=0;
     RegWrite <= 1;
 jal<=0;
     zero_ext<=1;
+	jr<=0;
     // or
     ALUControl <='b 0001;
     end
