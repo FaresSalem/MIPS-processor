@@ -70,7 +70,7 @@ and_gate and2(RegWrite,not_out,and2_out);
 initial 
 begin
 reset=1;
-#1
+#10
 reset=0;
 end
 
