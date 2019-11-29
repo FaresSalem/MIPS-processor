@@ -66,7 +66,7 @@ data2<=rf[read2];
 end
 always@(posedge clk)
 begin
-if(regWrite)
+if(regWrite && (writeReg !=5'b00000) )
       rf[writeReg]<=writeData;
 end
 endmodule
