@@ -1,0 +1,27 @@
+assume a=$s0,b=$s1 $t0,$t1 are temp register
+Assembly code:
+		addi 	$s0,$0,12
+		addi 	$s1,$0,25
+		slli 	$t0,$s0,2
+		slli 	$t1,$s1,2
+		lw	$t0, 0, $t0
+		lw	$t1, 0, $t1
+		jump	out
+	loop:	add	$t0, $t0, $t0
+		add	$t0, $t0, $t0
+		beq	$t0, $t1, loop
+	out:	addi	$s0,$t0,0
+		addi	$s1,$t1,0
+		add	$s0,$s0,$s1
+
+********
+c equivalent code:
+	int a=12,b=25;
+	int t0=mem[a];
+	int t1=mem[b];
+	do{
+	  t0*=4;
+	}while(t0==t1);
+	a=t0;
+	b=t1;
+	a+=b;

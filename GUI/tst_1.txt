@@ -1,0 +1,15 @@
+int a=0,i=1;
+while(a<10){
+a+=i;
+i++;
+}
+assume a=$a0,i=$t0
+**********
+addi $a0,$0,0
+addi $t1,$0,0
+addi $t0,$0,1
+slti $t1,$a0,10
+beq $t1,$0,exit
+add $a0,$a0,$t0
+addi $t0,$t0,1
+exit:

@@ -1,0 +1,2 @@
+verilog work "../MIPS-processor/and.v"
+verilog work "../MIPS-processor/full.v"

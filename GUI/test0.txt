@@ -1,0 +1,17 @@
+addi $s6,$zero,5                
+addi $s7,$zero,20                 
+addi $s0,$zero,1                  
+addi $s1,$zero,2                     
+addi $s2,$zero,3                     
+addi $s3,$zero,4                   
+addi $s4,$zero,5                    
+sw $s4,0($s6)			
+sw $s4,1($s6)			  
+add $t0, $s6,$zero 	
+add $t1,$s7,$zero		
+lw $s0,0($t0) 			
+addi $t2,$t0,1 			 
+lw $t0,0($t2) 			
+add $t0,$t0,$s0 		
+sw $t0,0($t1)
+

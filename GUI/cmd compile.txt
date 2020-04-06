@@ -1,0 +1,3 @@
+vlog -work work full.v 
+
+or *.v

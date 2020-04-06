@@ -1,0 +1,5 @@
+bne $s1, $s2, ELSE 
+addi $s1, $s1, 1 
+j NEXT
+ELSE: addi $s2, $s2, -1 
+NEXT: add $s2, $s2, $s1

@@ -1,0 +1,19 @@
+addi $s1,$zero,9
+addi $s6,$zero,6 
+addi $s3,$zero,5 
+sll $s3,$s3,2
+ori $s3,$s3,1           
+addi $s2,$s2,2   	
+and $s3, $zero, $zero       
+addi $s4,$zero,15  
+sw $s6,0($s4)
+For:slt $t0, $s2, $s3      
+beq $t0, $zero,Exit
+sll $t1, $s2, 0        
+add $t1, $t1, $s4   
+lw $t2, 0 ($t1)               
+add $s1, $s1, $t2
+addi $s2, $s2, 1              
+j For
+Exit:
+

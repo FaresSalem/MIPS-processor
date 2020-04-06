@@ -1,0 +1,11 @@
+ori $s0,$zero,3  			
+sll $s0,$s0,2			
+addi $s1,$zero,1		
+or $s2,$s0,$s1			
+addi $t0,$zero,5			
+and $s3,$s2,$t0		
+slt $t1,$s3,$t0		
+beq $t1,$zero,Exit
+addi $t1,$t1,1		
+Exit:
+

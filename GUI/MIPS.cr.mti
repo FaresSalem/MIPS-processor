@@ -1,0 +1,155 @@
+C:/Users/fares/Desktop/MIPS-processor-master/sign_extend.v {1 {vlog -work work -stats=none C:/Users/fares/Desktop/MIPS-processor-master/sign_extend.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module sign_extend
+-- Compiling module tb_sign_extend
+
+Top level modules:
+	tb_sign_extend
+
+} {} {}} C:/Users/fares/Desktop/MIPS-processor-master/instruction_memory.v {1 {vlog -work work -stats=none {C:\Users\fares\Desktop\MIPS-processor-master\instruction_memory.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module instruction_memory
+-- Compiling module tb_ins_mem
+
+Top level modules:
+	tb_ins_mem
+
+} {} {}} C:/Users/fares/Desktop/MIPS-processor-master/controlUnit_aluControl.v {1 {vlog -work work -stats=none C:/Users/fares/Desktop/MIPS-processor-master/controlUnit_aluControl.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Control
+-- Compiling module tb_control
+
+Top level modules:
+	tb_control
+
+} {} {}} C:/Users/fares/Desktop/MIPS-processor-master/register.v {1 {vlog -work work -stats=none C:/Users/fares/Desktop/MIPS-processor-master/register.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module register
+-- Compiling module tb_register
+
+Top level modules:
+	tb_register
+
+} {} {}} C:/Users/fares/Desktop/MIPS-processor-master/shift_left_2.v {1 {vlog -work work -stats=none C:/Users/fares/Desktop/MIPS-processor-master/shift_left_2.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module shift_left_2
+-- Compiling module tb_shift
+
+Top level modules:
+	tb_shift
+
+} {} {}} C:/Users/fares/Desktop/MIPS-processor-master/adder_2.v {1 {vlog -work work -stats=none C:/Users/fares/Desktop/MIPS-processor-master/adder_2.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module adder_2
+
+Top level modules:
+	adder_2
+
+} {} {}} C:/Users/fares/Desktop/MIPS-processor-master/data_memory.v {1 {vlog -work work -stats=none {C:\Users\fares\Desktop\MIPS-processor-master\data_memory.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module data_memory
+-- Compiling module tb_data_memory
+
+Top level modules:
+	tb_data_memory
+
+} {} {}} C:/Users/fares/Desktop/MIPS-processor-master/ALU.v {1 {vlog -work work -stats=none C:/Users/fares/Desktop/MIPS-processor-master/ALU.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module alu
+-- Compiling module tb_alu
+
+Top level modules:
+	tb_alu
+
+} {} {}} C:/Users/fares/Desktop/MIPS-processor-master/muxes.v {1 {vlog -work work -stats=none C:/Users/fares/Desktop/MIPS-processor-master/muxes.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module mux_32_13_32
+-- Compiling module mux_13_13_13
+-- Compiling module mux_32_32_32
+-- Compiling module mux_5_5_5
+-- Compiling module mux_5_const_5
+-- Compiling module mux_13_32_13
+
+Top level modules:
+	mux_32_13_32
+	mux_13_13_13
+	mux_32_32_32
+	mux_5_5_5
+	mux_5_const_5
+	mux_13_32_13
+
+} {} {}} C:/Users/fares/Desktop/MIPS-processor-master/pc_adder.v {1 {vlog -work work -stats=none C:/Users/fares/Desktop/MIPS-processor-master/pc_adder.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module adder_13bit
+-- Compiling module tb_adder_13bit
+
+Top level modules:
+	tb_adder_13bit
+
+} {} {}} C:/Users/fares/Desktop/MIPS-processor-master/and.v {1 {vlog -work work -stats=none C:/Users/fares/Desktop/MIPS-processor-master/and.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module and_gate
+-- Compiling module tb_and
+
+Top level modules:
+	tb_and
+
+} {} {}} C:/Users/fares/Desktop/MIPS-processor-master/full.v {1 {vlog -work work -stats=none {C:\Users\fares\Desktop\MIPS-processor-master\full.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module adder_13bit
+-- Compiling module tb_adder_13bit
+-- Compiling module alu
+-- Compiling module tb_alu
+-- Compiling module data_memory
+-- Compiling module tb_data_memory
+-- Compiling module pc
+-- Compiling module tb_pc
+-- Compiling module register
+-- Compiling module tb_register
+-- Compiling module clock
+-- Compiling module mux_32_13_32
+-- Compiling module mux_13_13_13
+-- Compiling module mux_32_32_32
+-- Compiling module mux_5_5_5
+-- Compiling module mux_5_const_5
+-- Compiling module mux_13_32_13
+-- Compiling module sign_extend
+-- Compiling module tb_sign_extend
+-- Compiling module instruction_memory
+-- Compiling module tb_ins_mem
+-- Compiling module Control
+-- Compiling module tb_control
+-- Compiling module shift_left_2
+-- Compiling module tb_shift
+-- Compiling module adder_2
+-- Compiling module tb_full
+
+Top level modules:
+	tb_adder_13bit
+	tb_alu
+	tb_data_memory
+	tb_pc
+	tb_register
+	mux_13_32_13
+	tb_sign_extend
+	tb_ins_mem
+	tb_control
+	tb_shift
+	tb_full
+
+} {} {}} C:/Users/fares/Desktop/MIPS-processor-master/pc.v {1 {vlog -work work -stats=none C:/Users/fares/Desktop/MIPS-processor-master/pc.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module pc
+-- Compiling module tb_pc
+
+Top level modules:
+	tb_pc
+
+} {} {}} C:/Users/fares/Desktop/MIPS-processor-master/clock.v {1 {vlog -work work -stats=none C:/Users/fares/Desktop/MIPS-processor-master/clock.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module clock
+
+Top level modules:
+	clock
+
+} {} {}}

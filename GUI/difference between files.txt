@@ -1,0 +1,15 @@
+import difflib
+text1 = open("sample1.txt").readlines()
+text2 = open("sample2.txt").readlines()
+
+for line in difflib.unified_diff(text1, text2):
+    print line,
+OUTPUT
+--- 
++++ 
+@@ -1 +1 @@
+-Sample file 1
++Sample file 2
+INPUT FILES
+sample1.txt
+sample2.txt

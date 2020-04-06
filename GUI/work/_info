@@ -1,0 +1,620 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/fares/Desktop/assembler/GUI/code
+vadder_13bit
+Z0 !s110 1576542047
+!i10b 1
+!s100 JjG74ko=;[eXfb`2hmAZ@0
+ILBzd>JX0>4394P[m27B@]1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/fares/Desktop/year work/MIPS Proj/GUI
+Z3 w1572623935
+Z4 8pc_adder.v
+Z5 Fpc_adder.v
+L0 1
+Z6 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z7 !s108 1576542046.000000
+Z8 !s107 adder_2.v|shift_left_2.v|controlUnit_aluControl.v|instruction_memory.v|sign_extend.v|muxes.v|clock.v|register.v|pc.v|data_memory.v|ALU.v|pc_adder.v|full.v|
+Z9 !s90 -work|work|full.v|
+!s101 -O0
+!i113 1
+Z10 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vadder_2
+R0
+!i10b 1
+!s100 ;RDPYIH066SKS1fo1G1@g0
+Ihc[MRbn785D[GR39[O7k83
+R1
+R2
+R3
+8adder_2.v
+Fadder_2.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+valu
+R0
+!i10b 1
+!s100 jOTgkG[N94niF@4<6OJ0H1
+IZH2z6jz90G2]N0aC1BX>f0
+R1
+R2
+R3
+Z11 8ALU.v
+Z12 FALU.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vand_gate
+Z13 !s110 1574796968
+!i10b 1
+!s100 OXm0^[@P8]f3IV`]8NKQD0
+IPN0`C1z3ALc`7hm1cEHJm0
+R1
+Z14 dC:/Users/fares/Desktop/assembler/GUI
+R3
+Z15 8and.v
+Z16 Fand.v
+L0 1
+R6
+r1
+!s85 0
+31
+Z17 !s108 1574796966.000000
+Z18 !s107 sign_extend.v|shift_left_2.v|register.v|pc_adder.v|pc.v|muxes.v|instruction_memory.v|full.v|data_memory.v|controlUnit_aluControl.v|clock.v|and.v|ALU.v|adder_2.v|
+Z19 !s90 -work|work|adder_2.v|ALU.v|and.v|clock.v|controlUnit_aluControl.v|data_memory.v|full.v|instruction_memory.v|muxes.v|pc.v|pc_adder.v|register.v|shift_left_2.v|sign_extend.v|
+!s101 -O0
+!i113 1
+R10
+vclock
+R0
+!i10b 1
+!s100 m1S8gmogPDIHg3_1Lc:dC0
+IHIkiNAjMd[>RH]c]Z^4XS2
+R1
+R2
+R3
+8clock.v
+Fclock.v
+L0 2
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vControl
+R0
+!i10b 1
+!s100 M;XdoDAiAzQQnjSWclm8g3
+I4_lD<TSm4PFK<3Za9TlPd1
+R1
+R2
+Z20 w1574719007
+Z21 8controlUnit_aluControl.v
+Z22 FcontrolUnit_aluControl.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+n@control
+vdata_memory
+R0
+!i10b 1
+!s100 9lS]FdChR]2o68mo@5iJ40
+IW1E=FE4N]SPk8VO25YZBk3
+R1
+R2
+w1574743623
+Z23 8data_memory.v
+Z24 Fdata_memory.v
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vinstruction_memory
+R0
+!i10b 1
+!s100 WRFW1jN6OWF];3Ni^LJ4^3
+IZ3MnWL2fi]dWf846?gB^J1
+R1
+R2
+Z25 w1576542004
+Z26 8instruction_memory.v
+Z27 Finstruction_memory.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vmux_13_13_13
+R0
+!i10b 1
+!s100 ;`@O?I=VHDGg8^K;PhHEk0
+INTDS1lYjDecG=EM89^eG^1
+R1
+R2
+R3
+Z28 8muxes.v
+Z29 Fmuxes.v
+L0 18
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vmux_13_32_13
+R0
+!i10b 1
+!s100 Ph:W2C44fH1c`4`L@fULJ1
+IQBaj]9LkOd090eQII7Z@N0
+R1
+R2
+R3
+R28
+R29
+L0 82
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vmux_32_13_32
+R0
+!i10b 1
+!s100 YVfFDK>m:fcQCdg1cQkDQ3
+IMo9Vnj_n4IDMQ0J6GeLMH1
+R1
+R2
+R3
+R28
+R29
+L0 2
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vmux_32_32_32
+R0
+!i10b 1
+!s100 iFoVBK8_1[kcg61off<AQ2
+IEa`bV;lXRI@DHMTBE;XSO0
+R1
+R2
+R3
+R28
+R29
+L0 34
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vmux_5_5_5
+R0
+!i10b 1
+!s100 Y8[Ogo`_;I@ja[>hX6kX93
+I;O5R0DnDeS7ZV@^kZS:^?3
+R1
+R2
+R3
+R28
+R29
+L0 50
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vmux_5_const_5
+R0
+!i10b 1
+!s100 Mn^He6U?Ch7^Dc[;T=J0H3
+IHK<Qc7MUDehknjZRjaD[<0
+R1
+R2
+R3
+R28
+R29
+L0 67
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vpc
+R0
+!i10b 1
+!s100 7h8SPC0Q[YChMW[Eh=H9z3
+IUWaZ_^Hf>OLg7BD=l48kS1
+R1
+R2
+Z30 w1574743494
+Z31 8pc.v
+Z32 Fpc.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vregister
+R0
+!i10b 1
+!s100 K1eR8cE[]PECgoWnF0C6_3
+IA:]mmQOcf?<WI``=L;LM^2
+R1
+R2
+Z33 w1574933545
+Z34 8register.v
+Z35 Fregister.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vshift_left_2
+R0
+!i10b 1
+!s100 XP@?Yk`jJIDbHJPhNU9bR1
+I4Ff2WmbW0PBLjP3VHERZ80
+R1
+R2
+R3
+Z36 8shift_left_2.v
+Z37 Fshift_left_2.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vsign_extend
+R0
+!i10b 1
+!s100 URPANb<Q@kMQ=1jBlnGPN0
+I71Q35c=dDJO`lef68:PQ92
+R1
+R2
+R3
+Z38 8sign_extend.v
+Z39 Fsign_extend.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vtb_adder_13bit
+R0
+!i10b 1
+!s100 IfHmHXVOMM]A_hAZaK5Wh1
+Im9;09UJlPnZnPQMiKL1Yj1
+R1
+R2
+R3
+R4
+R5
+L0 16
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vtb_alu
+R0
+!i10b 1
+!s100 n42NgacM@Y1O;R?_DF;KR3
+IeTnlHccF?S6B7P??9V6W61
+R1
+R2
+R3
+R11
+R12
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vtb_and
+R13
+!i10b 1
+!s100 WCOj2:P3oVOkJPe45Blel0
+Ib9_ICL2j2egEEm`Zc4Sf:0
+R1
+R14
+R3
+R15
+R16
+Z40 L0 15
+R6
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+!i113 1
+R10
+vtb_control
+R0
+!i10b 1
+!s100 jDRf<^G>JMEDJh`zEnG9C0
+IEkHb:hPRPDZW>kQ:8X<5f2
+R1
+R2
+R20
+R21
+R22
+L0 194
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vtb_data_memory
+!s110 1572818600
+!i10b 1
+!s100 =zW94Bk4cCH6<Fk?k0IhU1
+I8:bCNeFdUI^_@kJId:0490
+R1
+R14
+w1572818592
+R23
+R24
+L0 53
+R6
+r1
+!s85 0
+31
+!s108 1572818600.000000
+R18
+R19
+!s101 -O0
+!i113 1
+R10
+vtb_full
+R0
+!i10b 1
+!s100 _HD42N1XZ9G0IRTZcYBhi2
+IL5YoXjT0d@XBj3>`4C2h^0
+R1
+R2
+w1574743780
+8full.v
+Ffull.v
+R40
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vtb_ins_mem
+R0
+!i10b 1
+!s100 4PI<8HBIY<XNKDi[SX4O90
+Ie4T``PAUMO;k<Bj4n]mMC1
+R1
+R2
+R25
+R26
+R27
+L0 23
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vtb_pc
+R0
+!i10b 1
+!s100 ^:<fbVQ=BmCi=`W:1U>J63
+IC:86hEclYXK@Y_]`G:>ZR0
+R1
+R2
+R30
+R31
+R32
+Z41 L0 19
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vtb_register
+R0
+!i10b 1
+!s100 kZAP;`<W9G6KVL5T83YzC0
+IC`:z]6[ZIF8A]I8[j`?5O2
+R1
+R2
+R33
+R34
+R35
+L0 102
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vtb_shift
+R0
+!i10b 1
+!s100 7CJE<d>_61lSjA>OViPXV1
+Ich1=Y>M816XXQ6dgeLXMF1
+R1
+R2
+R3
+R36
+R37
+L0 10
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vtb_sign_extend
+R0
+!i10b 1
+!s100 B=GFhL>2ecKzo]7n_FKd73
+IDQMUcl6=g<TcD47<ebaB;0
+R1
+R2
+R3
+R38
+R39
+R41
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10

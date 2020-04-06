@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Users/fares/Desktop/assembler/GUI/synth/dssdd/tb_full.xst" -ofn "C:/Users/fares/Desktop/assembler/GUI/synth/dssdd/tb_full.syr" 
+xst -intstyle ise -ifn "C:/Users/fares/Desktop/assembler/GUI/synth/dssdd/tb_full.xst" -ofn "C:/Users/fares/Desktop/assembler/GUI/synth/dssdd/tb_full.syr" 
+xst -intstyle ise -ifn "C:/Users/fares/Desktop/assembler/GUI/synth/dssdd/tb_full.xst" -ofn "C:/Users/fares/Desktop/assembler/GUI/synth/dssdd/tb_full.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7vx485t-ffg1761-2 tb_full.ngc tb_full.ngd  
+map -intstyle ise -p xc7vx485t-ffg1761-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o tb_full_map.ncd tb_full.ngd tb_full.pcf 

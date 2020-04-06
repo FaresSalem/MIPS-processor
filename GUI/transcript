@@ -1,0 +1,48 @@
+# //  ModelSim PE Student Edition 10.4a Apr  7 2015 
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# // NOT FOR CORPORATE OR PRODUCTION USE.
+# // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
+# // FOR HIGHER EDUCATION PURPOSES ONLY
+# //
+# vsim -c -do "run 600" work.tb_full -c -do "looping.do" 
+# Start time: 02:26:21 on Dec 17,2019
+# Loading work.tb_full
+# Loading work.clock
+# Loading work.pc
+# Loading work.instruction_memory
+# Loading work.register
+# Loading work.Control
+# Loading work.mux_5_5_5
+# Loading work.mux_5_const_5
+# Loading work.sign_extend
+# Loading work.mux_32_32_32
+# Loading work.alu
+# Loading work.data_memory
+# Loading work.adder_13bit
+# Loading work.and_gate
+# Loading work.mux_32_13_32
+# Loading work.adder_2
+# Loading work.mux_13_13_13
+# run 600
+# ** Warning: (vsim-7) Failed to open readmem file "C:/Users/fares/Desktop/assembler/GUI/Binary.txt" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)    : instruction_memory.v(9)
+#    Time: 0 ns  Iteration: 0  Instance: /tb_full/inst_mem
+# ** Warning: (vsim-3533) [FOFIW] - Failed to open file "C:/Users/fares/Desktop/assembler/GUI/Register_File.txt" for writing.
+# 
+# No such file or directory. (errno = ENOENT)    : register.v(14)
+#    Time: 0 ns  Iteration: 2  Instance: /tb_full/regf
+# end
+# do looping.do
